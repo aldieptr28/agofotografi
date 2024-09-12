@@ -199,7 +199,7 @@ function submitForm(event) {
     const message = `Halo, saya ${name}. Saya ingin memesan layanan ${service} pada tanggal ${date}. Alamat saya di ${address}. Silakan hubungi saya kembali di nomor WA: ${phone}.`;
 
     // Mengarahkan ke WhatsApp API dengan pesan
-    const url = `https://api.whatsapp.com/send?phone=6882247124129&text=${encodeURIComponent(message)}`;
+    const url = `https://api.whatsapp.com/send?phone=6282247124129&text=${encodeURIComponent(message)}`;
 
     window.open(url, '_blank'); // Membuka link WhatsApp di tab baru
 
