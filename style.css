@@ -1,0 +1,868 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+header.hero {
+    background-image: url('images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    /* Pastikan ada transparansi */
+}
+
+header .content {
+    z-index: 2;
+    position: relative;
+    /* Pastikan ada transparansi */
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #e55b00;
+    transform: translateY(-3px);
+}
+
+/* About Section */
+section.about {
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* Sesuaikan warna teks agar kontras */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Services Section */
+section.services {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ff6600;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Portfolio Section */
+section.portfolio {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio .btn {
+    margin-top: 30px;
+}
+
+/* Testimonials Section */
+section.testimonials {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.testimonial {
+    background-color: #ff6600;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Booking Section */
+section.booking {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.booking-form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.booking-form button:hover {
+    background-color: #e55b00;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-section {
+    margin: 10px;
+    width: 30%;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ff6600;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6600;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .service-container,
+    .gallery,
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item,
+    .footer-section {
+        width: 100%;
+    }
+
+    .gallery img {
+        width: 80%;
+    }
+}
+
+/* Animations */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* CSS untuk tampilan grid 3 kolom */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.portfolio-item.hidden {
+    display: none;
+}
+
+.portfolio-item.show {
+    display: block;
+    animation: dropdown 0.5s ease forwards;
+}
+
+@keyframes dropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect pada card */
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol "Lihat Lebih Banyak" */
+.btn {
+    margin: 20px auto;
+    display: block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e55b00;
+}
+
+/* Tombol "Pesan Sekarang" */
+#pesanSekarangButton {
+    margin: 10px auto;
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 5px 10px;
+    /* Mengurangi padding untuk membuat tombol lebih kecil */
+    font-size: 14px;
+    /* Mengurangi ukuran font */
+    text-align: center;
+    border-radius: 3px;
+    /* Mengurangi radius sudut untuk ukuran tombol yang lebih kecil */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pesanSekarangButton:hover {
+    background-color: #e55b00;
+}
+
+/* Style umum untuk header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff6600;
+}
+
+/* Menu toggle button untuk mobile */
+.menu-toggle {
+    display: none;
+    /* Sembunyikan secara default */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media Queries untuk layar kecil */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        /* Sembunyikan navbar pada awalnya */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    #pesanSekarangButton {
+        margin: 10px auto;
+        display: inline-block;
+        background-color: #ff6600;
+        color: white;
+        padding: 5px 10px;
+        /* Mengurangi padding untuk membuat tombol lebih kecil */
+        font-size: 14px;
+        /* Mengurangi ukuran font */
+        text-align: center;
+        border-radius: 3px;
+        /* Mengurangi radius sudut untuk ukuran tombol yang lebih kecil */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 10em;
+    }
+
+    .navbar ul.show {
+        display: flex;
+        /* Tampilkan navbar ketika menu toggle diklik */
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Tampilkan menu toggle button pada layar kecil */
+    }
+}
+
+/* Style untuk modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff6600;
+}
+
+
+/* Style untuk gambar testimoni */
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk form pemesanan dalam box */
+.booking-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form label {
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Perbaikan layout input box */
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="date"],
+.booking-form input[type="tel"],
+.booking-form select {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Tombol kirim */
+.booking-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.booking-form button:hover {
+    background-color: #e55b00;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        display: none;
+    }
+
+    .navbar ul.show {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .service-container,
+    .gallery,
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item,
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Style Umum */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff6600;
+}
+
+/* Tampilkan tombol menu hanya di layar kecil */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Sidebar Off-Canvas */
+/* Sidebar Off-Canvas */
+.off-canvas-sidebar {
+    position: fixed;
+    top: -50%;
+    /* Mulai dari luar layar atas, mengatur ketinggian sidebar */
+    left: 0;
+    width: 100%;
+    height: 50%;
+    /* Sidebar hanya menutupi 50% dari tinggi layar */
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin: 15px 0;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+    color: #ff6600;
+}
+
+/* Tampilkan sidebar saat ada class 'show' */
+.off-canvas-sidebar.show {
+    top: 0;
+    /* Sidebar turun ke posisi dari luar layar ke atas */
+}
+
+/* Style Tombol Toggle Menu */
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Style Tombol Close Sidebar */
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .off-canvas-sidebar {
+        display: block;
+    }
+}
+
+/* Tampilkan Navbar di mode Desktop */
+@media (min-width: 769px) {
+    .off-canvas-sidebar {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
